@@ -1,0 +1,7 @@
+.layout-3-columns {
+    @include column;
+}
+.layout-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

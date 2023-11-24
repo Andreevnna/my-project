@@ -1,0 +1,50 @@
+.slider {
+    position: relative;
+    text-align: center;
+}
+.slider__img {
+    padding-top: 40px;
+}
+.slider__text {
+    width: 34%;
+    margin: auto;
+    h3 {
+        margin: 16px 0;
+    }
+}
+.slider__controls {
+    margin: 24px 0;
+    &:after {
+        @extend %control-slider;
+        opacity: 0.5;
+    }
+    &:before {
+        @extend %control-slider;
+        
+    }
+}
+.slider__control {
+    @extend %control-slider;
+    opacity: 0.5;
+}
+.slider__arrow {
+    @include button($background: $color-background-container, $padding: 16px);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 332px;
+    &:hover {
+        .icon_arrow-next {
+            background-image: url(/coffee-house/images/arrows/arrow-right-light.svg);
+        }
+        .icon_arrow-prev {
+            background-image: url(/coffee-house/images/arrows/arrow-left-light.svg);
+        }
+    }
+}
+.slider_arrow-prev {
+    left: 0;
+}
+.slider_arrow-next {
+    right: 0;
+}

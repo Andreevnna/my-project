@@ -1,0 +1,12 @@
+.about__photo {
+    padding: 40px 0px;
+    img {
+        margin-bottom: 33px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.about__content {
+    column-gap: 40px;
+}

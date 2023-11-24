@@ -1,0 +1,19 @@
+@mixin button($padding: 0px, $background, $border: 1px solid $color-background-container){
+    border: $border;
+    padding: $padding;
+    @extend %button;
+    &:hover {
+        border: none;
+        background-color: $background;
+        @extend %transition;
+    }
+    display: inline-block;
+}
+
+@mixin column($width: auto){
+    display: flex;
+    justify-content: space-between;
+    >* {
+        flex-basis: $width;
+    }
+}
