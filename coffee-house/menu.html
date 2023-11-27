@@ -4,52 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
     <title>Menu Coffee House</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
-            <a href="" class="logo"></a>
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li><a href="">Favorite coffee</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Mobile app</a></li>
-                    <li><a href="">Contact us</a></li>
-                </ul>
-            </nav>
-            <div class="header__menu">
-                <a href="" class="menu accentuated">Menu<span class="icon icon_menu"></span></a>
+            <div class="header__padding">
+                <div class="layout-3-columns">
+                    <a href="index.html" class="logo"></a>
+                    <nav class="header__navigation">
+                        <ul class="navigation">
+                            <li><a href="">Favorite coffee</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Mobile app</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__menu">
+                        <a href="./menu.html" class="menu menu-cheked"><span class="text">Menu</span><span class="icon icon_menu"></span></a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <section class="menu">
+    <section class="menu-section">
         <div class="wrapper">
             <div class="menu-coffee">
-                <h2>Behind each of our cups hides an amazing surprise</h2>
+                <h2>Behind each of our cups hides an <span class="accent font-italic">amazing surprise</span></h2>
                 <div class="menu-coffee__buttons">
-                    <a href="" class="button button_checked button_coffee">
-                        <span class="icon icon_coffee"></span>
-                        Coffee
+                    <a href="" class="button-tag button_checked button_coffee">
+                        <span class="align">
+                            <span class="background-icon">
+                                <span class="icon icon_coffee"></span>
+                            </span>
+                            Coffee
+                        </span>
                     </a>
-                    <a href="" class="button button_checked button_tea">
-                        <span class="icon icon_tea"></span>
-                        Tea
+                    <a href="" class="button-tag button_tea">
+                        <span class="align">
+                            <span class="background-icon">
+                                <span class="icon icon_tea"></span>
+                            </span>
+                            Tea
+                        </span>
                     </a>
-                    <a href="" class="button button_checked button_dessert">
-                        <span class="icon icon_dessert"></span>
-                        Dessert
+                    <a href="" class="button-tag button_dessert">
+                        <span class="align">
+                            <span class="background-icon">
+                                <span class="icon icon_dessert"></span>
+                            </span>
+                            Dessert
+                        </span>
                     </a>
                 </div>
                 <div class="menu-coffee__cards">
-                    <div class="layout-4-columns">
                         <div class="card">
                             <div class="card__img">
                                 <img src="images/menu/coffee-1.png" alt="">
                             </div>
                             <div class="card__content">
-                                <h4>Irish coffee</h4>
+                                <div class="card__content-description">
+                                <h3>Irish coffee</h3>
                                 <p>Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                                </div>
                                 <p class="card__price">$7.00</p>
                             </div>
                         </div>
@@ -58,8 +76,11 @@
                                 <img src="images/menu/coffee-2.png" alt="">
                             </div>
                             <div class="card__content">
-                                <h4>Kahlua coffee</h4>
-                                <p>Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                                <div class="card__content-description">
+                                    <h3>Kahlua coffee</h3>
+                                    <p>Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                                </div>
+                               
                                 <p class="card__price">$7.00</p>
                             </div>
                         </div>
@@ -68,8 +89,10 @@
                                 <img src="images/menu/coffee-3.png" alt="">
                             </div>
                             <div class="card__content">
-                                <h4>Honey raf</h4>
+                                <div class="card__content-description">
+                                <h3>Honey raf</h3>
                                 <p>Espresso with frothed milk, cream and aromatic honey</p>
+                                </div>
                                 <p class="card__price">$5.50</p>
                             </div>
                         </div>
@@ -78,29 +101,81 @@
                                 <img src="images/menu/coffee-4.png" alt="">
                             </div>
                             <div class="card__content">
-                                <h4>Ice cappuccino</h4>
+                                <div class="card__content-description">
+                                <h3>Ice cappuccino</h3>
                                 <p>Cappuccino with soft thick foam in summer version with ice</p>
+                                </div>
                                 <p class="card__price">$5.00</p>
                             </div>
                         </div>
-                    </div>
                 </div>
+                <div class="menu-coffee__cards">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="images/menu/coffee-5.png" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-description">
+                            <h3>Espresso</h3>
+                            <p>Classic black coffee</p>
+                            </div>
+                            <p class="card__price">$4.50</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="images/menu/coffee-6.png" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-description">
+                                <h3>Latte</h3>
+                                <p>Espresso coffee with the addition of steamed milk and dense milk foam</p>
+                            </div>
+                           
+                            <p class="card__price">$5.50</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="images/menu/coffee-7.png" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-description">
+                            <h3>Latte macchiato</h3>
+                            <p>Espresso with frothed milk and chocolate</p>
+                            </div>
+                            <p class="card__price">$5.50</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="images/menu/coffee-8.png" alt="">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__content-description">
+                            <h3>Coffee with cognac</h3>
+                            <p>Fragrant black coffee with cognac and whipped cream</p>
+                            </div>
+                            <p class="card__price">$6.50</p>
+                        </div>
+                    </div>
+            </div>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="wrapper">
-            <div class="layout-2-columns">
+            <div class="layout-2-columns footer-background">
                 <div class="footer__social">
-                    <h3>Sip, Savor, Smile. It’s coffee time!</h3>
+                    <h2>Sip, Savor, Smile. <span class="accent font-italic">It’s coffee time!</span></h2>
                     <div class="footer__icons">
-                        <a href=""><span class="icon icon_twitter"></span></a>
-                        <a href=""><span class="icon icon_instagram"></span></a>
-                        <a href=""><span class="icon icon_facebook"></span></a>
+                        <a href="" class="button__social"><span class="icon icon_twitter"></span></a>
+                        <a href="" class="button__social"><span class="icon icon_instagram"></span></a>
+                        <a href="" class="button__social"><span class="icon icon_facebook"></span></a>
                     </div>
                 </div>
                 <div class="footer__contacts">
-                    <h2>Contact us</h2>
+                    <h3>Contact us</h3>
                     <div class="footer__contact">
                         <p class="footer__adress">
                             <a href="https://maps.app.goo.gl/ZRGAWQSWyLADRLTu5" target="_blank">

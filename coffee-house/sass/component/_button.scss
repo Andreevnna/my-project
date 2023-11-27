@@ -67,3 +67,32 @@
         }
     }
 }
+.button-tag {
+    @include button($padding: 8px, $border: 1px solid $color-border-light,$background: $color-background-container);
+    color: $color-dark;
+    border-radius: 100px; 
+    margin: 0 3px;
+    height: 46px;
+    &:hover {
+        background-color: $color-background-container;
+        color: $color-light;
+        border: 1px solid $color-background-container;
+        .background-icon {
+            background-color: $color-light;
+        }
+    }
+}
+.background-icon {
+    background-color: $color-border-light;
+    border-radius: 50px;
+    padding: 7px 7px;
+    margin-right: 8px;
+}
+.button_checked {
+    background-color: $color-background-container;
+    color: $color-light;
+    border: 1px solid $color-background-container;
+    .background-icon {
+        background-color: $color-light;
+    }
+}

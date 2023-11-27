@@ -19,6 +19,10 @@
         margin: 20px 0;
         a {
             color: $color-light;
+            &:hover {
+                border-bottom: 2px solid $color-light;
+                @extend %transition;
+            }
         }
         
     }
