@@ -21,10 +21,13 @@
 }
 .menu-coffee {
     padding-bottom: 61px;
-    h2 {
+    h1 {
         text-align: center;
         width: 60%;
         margin: auto;
+        font-size: 6rem;
+        font-weight: 600;
+        line-height: 125%;
     }
 }
 .menu-coffee__buttons {

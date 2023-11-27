@@ -1,6 +1,7 @@
 html {
     @extend %font;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1.6rem;

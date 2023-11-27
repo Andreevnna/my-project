@@ -568,6 +568,8 @@ html {
 
 .menu-cheked {
   border-bottom: 2px solid #403F3D;
+  cursor: default;
+  pointer-events: none;
 }
 
 .layout-3-columns {
@@ -714,6 +716,8 @@ html {
   background-color: #665F55;
   color: #E1D4C9;
   border: 1px solid #665F55;
+  cursor: default;
+  pointer-events: none;
 }
 .button_checked .background-icon {
   background-color: #E1D4C9;
@@ -824,10 +828,13 @@ html {
 .menu-coffee {
   padding-bottom: 61px;
 }
-.menu-coffee h2 {
+.menu-coffee h1 {
   text-align: center;
   width: 60%;
   margin: auto;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 125%;
 }
 
 .menu-coffee__buttons {
@@ -863,6 +870,7 @@ html {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
