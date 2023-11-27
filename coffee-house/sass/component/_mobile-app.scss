@@ -1,0 +1,27 @@
+.mobile-app {
+    padding: 55px 0 94px 0;
+}
+.mobile-app__content {
+    padding-top: 144px;
+    p {
+        margin: 40px 0; 
+    }
+}
+.mobile-app__gap {
+    column-gap: 100px;
+}
+.mobile-app__button {
+    a {
+        width: 200px;
+        height: 64px;
+        margin-right: 15px;
+    }
+    .text {
+        padding: 0 6px;
+        display: inline-block;
+        color: $color-dark;
+    }
+}
+.highlight {
+    display: block;
+}

@@ -1,0 +1,26 @@
+.enjoy__background {
+    background-image: url(/coffee-house/images/img-hero.png);
+    background-position: center;
+    background-size: cover;
+    @extend %border-radius;
+    padding: 100px;
+}
+.enjoy__content {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    color: $color-light;
+    a {
+        color: $color-dark;
+    }
+    p {
+        margin: 20px 0;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+
+}
+.enjoy__button {
+    margin-top: 20px;
+}

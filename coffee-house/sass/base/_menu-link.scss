@@ -1,0 +1,10 @@
+.menu {
+    color: $color-dark;
+    &:hover {
+        @extend %transition;
+        border-bottom: 2px solid $color-dark;
+    }
+    .text {
+        margin-right: 10px;
+    }
+}

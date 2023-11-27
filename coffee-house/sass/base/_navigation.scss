@@ -1,0 +1,10 @@
+.navigation {
+    margin-right: 10px;
+    li {
+        display: inline-block;
+        padding-right: 34px;
+        a {
+            color: $color-dark;
+        }
+    }
+}
