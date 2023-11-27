@@ -40,13 +40,13 @@
     &:hover {
         border: 1px solid $color-light;
         .icon_facebook {
-            background-image: url(images/icon/facebook-light.svg);
+            background-image: url(/coffee-house/images/icon/facebook-light.svg);
         }
         .icon_twitter {
-            background-image: url(images/icon/twitter-light.svg);
+            background-image: url(/coffee-house/images/icon/twitter-light.svg);
         }
         .icon_instagram {
-            background-image: url(images/icon/instagram-light.svg);
+            background-image: url(/coffee-house/images/icon/instagram-light.svg);
         }
     }
 }
@@ -54,10 +54,10 @@
     @include button($padding: 4px 19px, $border: 1px solid $color-dark,$background: $color-background-container);
     &:hover {
         .icon_google-play {
-            background-image: url(images/icon/google-light.svg);
+            background-image: url(/coffee-house/images/icon/google-light.svg);
         }
         .icon_apple {
-            background-image: url(images/icon/apple-light.svg);
+            background-image: url(/coffee-house/images/icon/apple-light.svg);
         }
         border: 1px solid $color-background-container;
         .text {
