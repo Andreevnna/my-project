@@ -4,7 +4,25 @@
         display: inline-block;
         padding-right: 34px;
         a {
+            position: relative;
             color: $color-dark;
+            &:after {
+                height: 2px;
+                width: 100%;
+                background-color: $color-dark;
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                content: '';
+                scale: 0;
+                @extend %transition;
+            }
+            &:hover {
+                &:after {
+                    @extend %transition;
+                    scale: 1;
+                }
+            }
         }
     }
 }
