@@ -6,7 +6,9 @@
     align-items: center;
 }
 .menu-cheked {
-    border-bottom: 2px solid $color-dark;
+    &:after {
+        scale: 1;
+    }
     cursor: default;
     pointer-events: none;
 }
