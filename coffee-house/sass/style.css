@@ -593,6 +593,10 @@ html {
   scale: 1;
 }
 
+footer {
+  padding-bottom: 40px;
+}
+
 .header__padding {
   padding: 20px 0px;
 }
@@ -924,14 +928,14 @@ html {
 }
 
 .card__content {
-  height: 187px;
+  height: 194px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 14px 20px;
 }
 .card__content h3 {
-  margin: 0;
+  margin: 7px 0 0 0;
 }
 .card__content p {
   margin: 12px 0 5px 0;
