@@ -1,17 +1,14 @@
 .menu-coffee__cards {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 40px;
+    
 }
 .card {
     cursor: pointer;
     width: 310px;
-    margin-right: 40px;
     border: 1px solid $color-border-light;
     border-radius: 40px;
-    &:last-child {
-        margin-right: 0px;
-    }
     &:hover {
         img {
             @extend %transition;
