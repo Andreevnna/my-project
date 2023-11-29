@@ -594,6 +594,10 @@ html {
   scale: 1;
 }
 
+footer {
+  padding-bottom: 40px;
+}
+
 .header__padding {
   padding: 20px 0px;
 }
