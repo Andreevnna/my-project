@@ -604,9 +604,11 @@ html {
 }
 
 .menu-cheked {
-  border-bottom: 2px solid #403F3D;
   cursor: default;
   pointer-events: none;
+}
+.menu-cheked:after {
+  scale: 1;
 }
 
 .layout-3-columns {
