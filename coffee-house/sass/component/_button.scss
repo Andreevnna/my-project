@@ -26,10 +26,12 @@
     transform: translateX(15px);
     display: inline-block;
     margin-right: 10px;
+    @extend %transition;
 }
 .enjoy__button {
     .icon_menu {
         opacity: 0;
+        @extend %transition;
     }
 }
 .button__social {

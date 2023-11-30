@@ -1,12 +1,39 @@
 .about__photo {
     padding: 40px 0px;
-    img {
-        margin-bottom: 33px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
 }
 .about__content {
     column-gap: 40px;
+}
+.about__container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 660px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    img {
+        width: 100%;
+        text-align: center;
+        scale: 1.1;
+        @extend %transition;
+        &:hover {
+            @extend %transition;
+            cursor: pointer;
+            scale: 1.0;
+        }
+    }
+}
+.about__content-img {
+    display: flex;
+    flex-direction: column;
+}
+.about__img-large {
+    height: 590px;
+}
+.about__img-small {
+    height: 430px;
 }
