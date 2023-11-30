@@ -880,20 +880,16 @@ footer {
 }
 
 .menu-coffee__cards {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px 40px;
 }
 
 .card {
   cursor: pointer;
   width: 310px;
-  margin-right: 40px;
   border: 1px solid #C1B6AD;
   border-radius: 40px;
-}
-.card:last-child {
-  margin-right: 0px;
 }
 .card:hover img {
   scale: 1;
