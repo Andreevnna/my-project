@@ -34,6 +34,7 @@
     position: absolute;
     top: 332px;
     &:hover {
+        border: 1px solid $color-background-container;
         .icon_arrow-next {
             background-image: url(/coffee-house/images/arrows/arrow-right-light.svg);
         }

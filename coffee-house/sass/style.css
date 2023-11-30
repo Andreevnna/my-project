@@ -534,6 +534,9 @@ html {
   border: none;
   background-color: #665F55;
 }
+.slider__arrow:hover {
+  border: 1px solid #665F55;
+}
 .slider__arrow:hover .icon_arrow-next {
   background-image: url(/coffee-house/images/arrows/arrow-right-light.svg);
 }
