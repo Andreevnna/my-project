@@ -4,6 +4,7 @@
     background-size: cover;
     @extend %border-radius;
     padding: 100px;
+    background-repeat: no-repeat;
 }
 .enjoy__content {
     display: flex;

@@ -525,7 +525,7 @@ html {
 }
 
 .wrapper {
-  width: 1360px;
+  max-width: 1360px;
   margin: auto;
 }
 
@@ -729,6 +729,7 @@ html {
   background-position: center;
   background-size: cover;
   padding: 100px;
+  background-repeat: no-repeat;
 }
 
 .enjoy__content {
