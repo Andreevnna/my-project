@@ -5,12 +5,18 @@
     @extend %border-radius;
     padding: 100px;
     background-repeat: no-repeat;
+    @include media-tablet {
+        padding: 100px 60px;
+    }
 }
 .enjoy__content {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    max-width: 530px;
     color: $color-light;
+    @include media-tablet {
+        // width: 100%;
+    }
     a {
         color: $color-dark;
     }

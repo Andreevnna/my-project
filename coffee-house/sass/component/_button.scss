@@ -27,11 +27,17 @@
     display: inline-block;
     margin-right: 10px;
     @extend %transition;
+    @include media-tablet{
+        transform: translateX(0px);
+    }
 }
 .enjoy__button {
     .icon_menu {
         opacity: 0;
         @extend %transition;
+        @include media-tablet{
+            opacity: 1;
+        }
     }
 }
 .button__social {
@@ -98,5 +104,48 @@
     pointer-events: none;
     .background-icon {
         background-color: $color-light;
+    }
+}
+.button-menu-mobile {
+    align-self: center;
+    position: relative;
+    border: 1px solid $color-background-container;
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    display: none;
+    &:after {
+        display: block;
+        width: 16px;
+        height: 1px;
+        content: '';
+        background-color: $color-dark;
+        position: absolute;
+        bottom: 17px;
+        left: 13px;
+    }
+    @include media-tablet {
+        display: block;
+    }
+}
+.button-menu-mobile__line {
+    display: block;
+    width: 16px;
+    height: 1px;
+    content: '';
+    background-color: $color-dark;
+    position: absolute;
+    top: 17px;
+    left: 13px;
+}
+.refresh {
+    display: none;
+    border: 1px solid $color-background-container;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: 40px;
+    @include media-tablet {
+        display: block;
     }
 }

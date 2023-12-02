@@ -4,6 +4,9 @@
 .header__menu {
     display: flex;
     align-items: center;
+    @include media-tablet {
+        display: none;
+    }
 }
 .menu-cheked {
     &:after {
@@ -11,4 +14,9 @@
     }
     cursor: default;
     pointer-events: none;
+}
+.header__navigation {
+    @include media-tablet {
+        display: none;
+    }
 }
