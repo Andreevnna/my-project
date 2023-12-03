@@ -4,16 +4,33 @@
 }
 .slider__img {
     padding-top: 40px;
+    img {
+        max-width: 480px;
+        @include media-mobile {
+            max-width: 348px;
+        }
+    }
 }
 .slider__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
     max-width: 480px;
     margin: auto;
     h3 {
-        margin: 16px 0;
+        margin: 13px 0 0 0;
+    }
+    p {
+        margin: 0;
+    }
+}
+.slider__price {
+    h3 {
+        margin: 0;
     }
 }
 .slider__controls {
-    margin: 24px 0;
+    margin: 25px 0;
     &:after {
         @extend %control-slider;
         opacity: 0.5;
@@ -48,4 +65,9 @@
 }
 .slider_arrow-next {
     right: 0;
+}
+.slider__arrows {
+    @include media-mobile {
+        display: none;
+    }
 }

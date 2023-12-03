@@ -7,6 +7,9 @@
     @include media-tablet {
         padding: 100px 60px;
     }
+    @include media-mobile {
+        padding: 60px 16px;
+    }
 }
 .footer__icons {
     padding-top: 38px;
@@ -18,6 +21,9 @@
     }
     @include media-tablet {
         padding-top: 78px;
+    }
+    @include media-mobile {
+        padding-top: 19px;
     }
 }
 .footer__contact {

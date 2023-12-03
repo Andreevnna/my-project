@@ -31,6 +31,9 @@
         @include media-tablet {
             scale: 1.0;
         }
+        @include media-mobile {
+            max-width: 726px;
+        }
     }
 }
 .about__content-img {
@@ -40,9 +43,13 @@
 }
 .about__img-large {
     max-height: 590px;
+    @include media-mobile {
+        max-width: 348px;
+    }
 }
 .about__img-small {
     max-height: 430px;
+
     @include media-tablet {
         display: none;
     }

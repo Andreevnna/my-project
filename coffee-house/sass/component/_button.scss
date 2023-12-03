@@ -79,22 +79,28 @@
     @include button($padding: 8px, $border: 1px solid $color-border-light,$background: $color-background-container);
     color: $color-dark;
     border-radius: 100px; 
-    margin: 0 3px;
+    // margin: 0 3px;
     height: 46px;
+    display: flex;
+    align-items: center;
     &:hover {
         background-color: $color-background-container;
         color: $color-light;
         border: 1px solid $color-background-container;
-        .background-icon {
+        .button-tag__background-icon {
             background-color: $color-light;
         }
     }
 }
-.background-icon {
+.button-tag__background-icon {
     background-color: $color-border-light;
     border-radius: 50px;
-    padding: 7px 7px;
+    display: flex;
+    width: 30px;
+    height: 30px;
     margin-right: 8px;
+    justify-content: center;
+    align-items: center;
 }
 .button_checked {
     background-color: $color-background-container;
@@ -102,7 +108,7 @@
     border: 1px solid $color-background-container;
     cursor: default;
     pointer-events: none;
-    .background-icon {
+    .button-tag__background-icon {
         background-color: $color-light;
     }
 }
