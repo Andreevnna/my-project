@@ -53,15 +53,13 @@
     height: 60px;
     position: absolute;
     top: 332px;
-    @include nohover {
-        &:hover {
-            border: 1px solid $color-background-container;
-            .icon_arrow-next {
-                background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
-            }
-            .icon_arrow-prev {
-                background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
-            }
+    &:hover {
+        border: 1px solid $color-background-container;
+        .icon_arrow-next {
+            background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
+        }
+        .icon_arrow-prev {
+            background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
         }
     }
 }
