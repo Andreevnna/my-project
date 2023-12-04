@@ -9,6 +9,9 @@
         @include media-mobile {
             max-width: 348px;
         }
+        @include media-tablet {
+            max-width: 100%;
+        }
     }
 }
 .slider__text {
@@ -50,13 +53,15 @@
     height: 60px;
     position: absolute;
     top: 332px;
-    &:hover {
-        border: 1px solid $color-background-container;
-        .icon_arrow-next {
-            background-image: url(/coffee-house/images/arrows/arrow-right-light.svg);
-        }
-        .icon_arrow-prev {
-            background-image: url(/coffee-house/images/arrows/arrow-left-light.svg);
+    @include nohover {
+        &:hover {
+            border: 1px solid $color-background-container;
+            .icon_arrow-next {
+                background-image: url(/coffee-house/images/arrows/arrow-right-light.svg);
+            }
+            .icon_arrow-prev {
+                background-image: url(/coffee-house/images/arrows/arrow-left-light.svg);
+            }
         }
     }
 }

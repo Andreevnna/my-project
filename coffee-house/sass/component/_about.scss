@@ -30,6 +30,10 @@
         }
         @include media-tablet {
             scale: 1.0;
+            max-width: none;
+        }
+        @include media-tablet {
+            max-width: 100%;
         }
         @include media-mobile {
             max-width: 726px;

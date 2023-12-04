@@ -517,6 +517,11 @@ html {
     max-width: 348px;
   }
 }
+@media (max-width: 768px) {
+  .slider__img img {
+    max-width: 100%;
+  }
+}
 
 .slider__text {
   display: flex;
@@ -559,14 +564,16 @@ html {
   border: none;
   background-color: #665F55;
 }
-.slider__arrow:hover {
-  border: 1px solid #665F55;
-}
-.slider__arrow:hover .icon_arrow-next {
-  background-image: url(/coffee-house/images/arrows/arrow-right-light.svg);
-}
-.slider__arrow:hover .icon_arrow-prev {
-  background-image: url(/coffee-house/images/arrows/arrow-left-light.svg);
+@media (hover: none) and (pointer: coarse) {
+  .slider__arrow:hover {
+    border: 1px solid #665F55;
+  }
+  .slider__arrow:hover .icon_arrow-next {
+    background-image: url(/coffee-house/images/arrows/arrow-right-light.svg);
+  }
+  .slider__arrow:hover .icon_arrow-prev {
+    background-image: url(/coffee-house/images/arrows/arrow-left-light.svg);
+  }
 }
 
 .slider_arrow-prev {
@@ -989,6 +996,12 @@ footer {
 @media (max-width: 768px) {
   .about__container-img img {
     scale: 1;
+    max-width: none;
+  }
+}
+@media (max-width: 768px) {
+  .about__container-img img {
+    max-width: 100%;
   }
 }
 @media (max-width: 380px) {
@@ -1103,6 +1116,11 @@ footer {
 }
 .mobile-app__image img {
   max-width: 630px;
+}
+@media (max-width: 1440px) {
+  .mobile-app__image img {
+    max-width: 100%;
+  }
 }
 @media (max-width: 380px) {
   .mobile-app__image img {
