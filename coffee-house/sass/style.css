@@ -619,7 +619,7 @@ html {
   padding-top: 9px;
 }
 .footer__contacts h3 {
-  margin-bottom: 22px 0 40px 0;
+  margin: 22px 0 40px 0;
 }
 @media (max-width: 768px) {
   .footer__contacts {
