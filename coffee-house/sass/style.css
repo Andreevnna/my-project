@@ -1134,15 +1134,8 @@ footer {
   justify-content: center;
   grid-gap: 40px 40px;
 }
-@media (max-width: 1440px) {
-  .menu-coffee__cards {
-    height: 1052px;
-    overflow: hidden;
-  }
-}
 @media (max-width: 380px) {
   .menu-coffee__cards {
-    height: 2144px;
     grid-gap: 38px 40px;
   }
 }
@@ -1155,6 +1148,9 @@ footer {
 }
 .card:hover img {
   scale: 1;
+}
+.card:nth-child(n+5) {
+  display: none;
 }
 
 .card__img {
