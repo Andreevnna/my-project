@@ -564,16 +564,14 @@ html {
   border: none;
   background-color: #665F55;
 }
-@media (hover: none) and (pointer: coarse) {
-  .slider__arrow:hover {
-    border: 1px solid #665F55;
-  }
-  .slider__arrow:hover .icon_arrow-next {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
-  }
-  .slider__arrow:hover .icon_arrow-prev {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
-  }
+.slider__arrow:hover {
+  border: 1px solid #665F55;
+}
+.slider__arrow:hover .icon_arrow-next {
+  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
+}
+.slider__arrow:hover .icon_arrow-prev {
+  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
 }
 
 .slider_arrow-prev {
@@ -1149,8 +1147,10 @@ footer {
 .card:hover img {
   scale: 1;
 }
-.card:nth-child(n+5) {
-  display: none;
+@media (max-width: 768px) {
+  .card:nth-child(n+5) {
+    display: none;
+  }
 }
 
 .card__img {
