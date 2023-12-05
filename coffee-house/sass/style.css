@@ -347,7 +347,7 @@ html {
 }
 
 .logo {
-  background-image: url(/coffee-house/images/logo.svg);
+  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/logo.svg);
   width: 100px;
   height: 60px;
   display: inline-block;
@@ -1134,15 +1134,8 @@ footer {
   justify-content: center;
   grid-gap: 40px 40px;
 }
-@media (max-width: 1440px) {
-  .menu-coffee__cards {
-    height: 1052px;
-    overflow: hidden;
-  }
-}
 @media (max-width: 380px) {
   .menu-coffee__cards {
-    height: 2144px;
     grid-gap: 38px 40px;
   }
 }
@@ -1155,6 +1148,9 @@ footer {
 }
 .card:hover img {
   scale: 1;
+}
+.card:nth-child(n+5) {
+  display: none;
 }
 
 .card__img {
