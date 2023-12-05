@@ -3,12 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     grid-gap: 40px 40px;
-    // @include media-laptop{
-    //     height: 1052px;
-    //     overflow: hidden;
-    // }
     @include media-mobile{
-        // height: 2144px;
         grid-gap: 38px 40px;
     }
 }
@@ -60,7 +55,6 @@
 .menu-coffee__buttons {
     padding: 40px 0;
     text-align: center;
-    // test
     display: flex;
     column-gap: 15px;
     @include media-mobile {
@@ -74,7 +68,7 @@
     justify-content: space-between;
     padding: 20px;
     h3 {
-        margin: 7px 0 0 0;
+        margin: 0 0 0 0;
     }
     p {
         margin: 0;
