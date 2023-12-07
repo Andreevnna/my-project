@@ -17,12 +17,24 @@
                 scale: 0;
                 @extend %transition;
             }
+        }
+    }
+}
+@media (hover: hover){
+    .navigation {
+        a {
             &:hover {
                 &:after {
-                    @extend %transition;
+                    transition: all 0.5s ease-in-out;
                     scale: 1;
                 }
             }
         }
+    }
+}
+@media (max-width: 786px) {
+    .navigation {
+        margin-right: 0px;
+        padding: 0px;
     }
 }

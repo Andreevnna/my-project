@@ -34,3 +34,20 @@
 .enjoy__button {
     margin-top: 20px;
 }
+@media (min-width:769px) and (max-width: 795px){
+    .enjoy__content {
+        h1 {
+            font-size: 6.2rem;
+        }
+    }
+}
+@media (min-width: 381px) and (max-width: 715px){
+    .enjoy__content {
+        h1 {
+            font-size: 4.2rem;
+        }
+    }
+    .enjoy__background { 
+        padding: 60px 30px;
+    }
+}
