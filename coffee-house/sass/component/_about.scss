@@ -23,20 +23,29 @@
         text-align: center;
         scale: 1.1;
         @extend %transition;
-        &:hover {
-            @extend %transition;
-            cursor: pointer;
-            scale: 1.0;
-        }
+        // &:hover {
+        //     @extend %transition;
+        //     cursor: pointer;
+        //     scale: 1.0;
+        // }
         @include media-tablet {
-            scale: 1.0;
-            max-width: none;
-        }
-        @include media-tablet {
+            scale: 1.055;
             max-width: 100%;
         }
         @include media-mobile {
             max-width: 726px;
+            scale: 1;
+        }
+    }
+}
+@media (hover: hover) {
+    .about__container-img {
+        img {
+            &:hover {
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+                scale: 1.0;
+            }
         }
     }
 }
@@ -53,8 +62,14 @@
 }
 .about__img-small {
     max-height: 430px;
-
     @include media-tablet {
         display: none;
+    }
+}
+@media (min-width:381px) and (max-width: 650px) {
+    .about__text {
+        h2 {
+            font-size: 4rem;
+        }
     }
 }
