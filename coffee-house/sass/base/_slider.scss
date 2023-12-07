@@ -1,0 +1,91 @@
+.slider {
+    position: relative;
+    text-align: center;
+}
+.slider__img {
+    padding-top: 40px;
+    img {
+        max-width: 480px;
+        @include media-mobile {
+            max-width: 348px;
+        }
+        @include media-tablet {
+            max-width: 100%;
+        }
+    }
+}
+.slider__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 480px;
+    margin: auto;
+    h3 {
+        margin: 13px 0 0 0;
+    }
+    p {
+        margin: 0;
+    }
+}
+.slider__price {
+    h3 {
+        margin: 0;
+    }
+}
+.slider__controls {
+    margin: 25px 0;
+    &:after {
+        @extend %control-slider;
+        opacity: 0.5;
+    }
+    &:before {
+        @extend %control-slider;
+        
+    }
+}
+.slider__control {
+    @extend %control-slider;
+    opacity: 0.5;
+}
+.slider__arrow {
+    @include button($padding: 16px);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 332px;
+    // &:hover {
+    //     border: 1px solid $color-background-container;
+    //     .icon_arrow-next {
+    //         background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
+    //     }
+    //     .icon_arrow-prev {
+    //         background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
+    //     }
+    // }
+}
+@media (hover:hover) {
+    .slider__arrow {
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            border: 1px solid $color-background-container;
+            background-color: $color-background-container;
+            .icon_arrow-next {
+                background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
+            }
+            .icon_arrow-prev {
+                background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
+            }
+        }
+    }
+}
+.slider_arrow-prev {
+    left: 0;
+}
+.slider_arrow-next {
+    right: 0;
+}
+.slider__arrows {
+    @include media-mobile {
+        display: none;
+    }
+}

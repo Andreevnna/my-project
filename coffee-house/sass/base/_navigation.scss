@@ -1,0 +1,40 @@
+.navigation {
+    margin-right: 10px;
+    li {
+        display: inline-block;
+        padding-right: 34px;
+        a {
+            position: relative;
+            color: $color-dark;
+            &:after {
+                height: 2px;
+                width: 100%;
+                background-color: $color-dark;
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                content: '';
+                scale: 0;
+                @extend %transition;
+            }
+        }
+    }
+}
+@media (hover: hover){
+    .navigation {
+        a {
+            &:hover {
+                &:after {
+                    transition: all 0.5s ease-in-out;
+                    scale: 1;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 786px) {
+    .navigation {
+        margin-right: 0px;
+        padding: 0px;
+    }
+}

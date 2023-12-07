@@ -1,0 +1,53 @@
+.enjoy__background {
+    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/img-hero.png);
+    background-position: center;
+    background-size: cover;
+    @extend %border-radius;
+    padding: 100px;
+    background-repeat: no-repeat;
+    @include media-tablet {
+        padding: 100px 60px;
+    }
+    @include media-mobile {
+        padding: 60px 16px;
+    }
+}
+.enjoy__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    color: $color-light;
+    @include media-tablet {
+        // width: 100%;
+    }
+    a {
+        color: $color-dark;
+    }
+    p {
+        margin: 20px 0;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+
+}
+.enjoy__button {
+    margin-top: 20px;
+}
+@media (min-width:769px) and (max-width: 795px){
+    .enjoy__content {
+        h1 {
+            font-size: 6.2rem;
+        }
+    }
+}
+@media (min-width: 381px) and (max-width: 715px){
+    .enjoy__content {
+        h1 {
+            font-size: 4.2rem;
+        }
+    }
+    .enjoy__background { 
+        padding: 60px 30px;
+    }
+}

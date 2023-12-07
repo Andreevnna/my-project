@@ -1,0 +1,30 @@
+@mixin button($padding: 0px, $border: 1px solid $color-background-container){
+    display: inline-block;
+    border: $border;
+    padding: $padding;
+    @extend %button;
+    // &:hover {
+    //     border: none;
+    //     background-color: $background;
+    //     @extend %transition;
+    // }
+}
+
+@mixin column($width: auto){
+    display: flex;
+    justify-content: space-between;
+    >* {
+        flex-basis: $width;
+    }
+}
+@mixin media-laptop {
+    @media (max-width: $content-width) { @content; }
+}
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) { @content; }
+}
+  
+@mixin media-mobile {
+    @media (max-width: $mobile-width) { @content; }
+}

@@ -1,0 +1,10 @@
+.layout-flex {
+    @include column;
+}
+.layout-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include media-tablet {
+        grid-template-columns: 1fr;
+    }
+}

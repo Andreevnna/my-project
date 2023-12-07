@@ -1,0 +1,21 @@
+%font {
+    font-family: Inter, 'Open Sans', 'Oswaid';
+}
+%button {
+    border-radius: 50px;
+}
+%transition {
+    transition: all 0.5s ease-in-out;
+}
+%border-radius {
+    border-radius: 40px;
+}
+%control-slider {
+    width: 40px;
+    height: 4px;
+    background-color: $color-dark;
+    display: inline-block;
+    content: '';
+    margin: 0px 4px;
+    border-radius: 100px;
+}
