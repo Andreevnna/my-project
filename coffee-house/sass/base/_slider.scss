@@ -48,18 +48,33 @@
     opacity: 0.5;
 }
 .slider__arrow {
-    @include button($background: $color-background-container, $padding: 16px);
+    @include button($padding: 16px);
     width: 60px;
     height: 60px;
     position: absolute;
     top: 332px;
-    &:hover {
-        border: 1px solid $color-background-container;
-        .icon_arrow-next {
-            background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
-        }
-        .icon_arrow-prev {
-            background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
+    // &:hover {
+    //     border: 1px solid $color-background-container;
+    //     .icon_arrow-next {
+    //         background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
+    //     }
+    //     .icon_arrow-prev {
+    //         background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
+    //     }
+    // }
+}
+@media (hover:hover) {
+    .slider__arrow {
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            border: 1px solid $color-background-container;
+            background-color: $color-background-container;
+            .icon_arrow-next {
+                background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
+            }
+            .icon_arrow-prev {
+                background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
+            }
         }
     }
 }
