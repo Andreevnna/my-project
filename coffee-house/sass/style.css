@@ -347,7 +347,7 @@ html {
 }
 
 .logo {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/logo.svg);
+  background-image: url(../../coffee-house/images/logo.svg);
   width: 100px;
   height: 60px;
   display: inline-block;
@@ -409,7 +409,7 @@ html {
 }
 
 .icon_menu {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/coffee-cup.svg);
+  background-image: url(../../coffee-house/images/icon/coffee-cup.svg);
   width: 20px;
   height: 20px;
 }
@@ -420,91 +420,91 @@ html {
 }
 
 .icon_arrow-prev {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left.svg);
+  background-image: url(../../coffee-house/images/arrows/arrow-left.svg);
   width: 24px;
   height: 24px;
 }
 
 .icon_arrow-next {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right.svg);
+  background-image: url(../../coffee-house/images/arrows/arrow-right.svg);
   width: 24px;
   height: 24px;
 }
 
 .icon_google-play {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/google.svg);
+  background-image: url(../../coffee-house/images/icon/google.svg);
   width: 36px;
   height: 36px;
 }
 
 .icon_apple {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/apple.svg);
+  background-image: url(../../coffee-house/images/icon/apple.svg);
   width: 36px;
   height: 36px;
 }
 
 .icon_twitter {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/twitter.svg);
+  background-image: url(../../coffee-house/images/icon/twitter.svg);
   width: 24px;
   height: 24px;
 }
 
 .icon_instagram {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/instagram.svg);
+  background-image: url(../../coffee-house/images/icon/instagram.svg);
   width: 24px;
   height: 24px;
 }
 
 .icon_facebook {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/facebook.svg);
+  background-image: url(../../coffee-house/images/icon/facebook.svg);
   width: 24px;
   height: 24px;
 }
 
 .icon_adress {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/pin-alt.svg);
+  background-image: url(../../coffee-house/images/icon/pin-alt.svg);
   width: 20px;
   height: 20px;
   margin-right: 4px;
 }
 
 .icon_phone {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/phone.svg);
+  background-image: url(../../coffee-house/images/icon/phone.svg);
   width: 20px;
   height: 20px;
   margin-right: 4px;
 }
 
 .icon_time {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/clock.svg);
+  background-image: url(../../coffee-house/images/icon/clock.svg);
   width: 20px;
   height: 20px;
   margin-right: 4px;
 }
 
 .icon_coffee {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/coffee.svg);
+  background-image: url(../../coffee-house/images/icon/coffee.svg);
   width: 16px;
   height: 20px;
   vertical-align: middle;
 }
 
 .icon_tea {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/tea.svg);
+  background-image: url(../../coffee-house/images/icon/tea.svg);
   width: 16px;
   height: 20px;
   vertical-align: middle;
 }
 
 .icon_dessert {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/dessert.svg);
+  background-image: url(../../coffee-house/images/icon/dessert.svg);
   width: 16px;
   height: 20px;
   vertical-align: middle;
 }
 
 .icon_refresh {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/refresh.svg);
+  background-image: url(../../coffee-house/images/icon/refresh.svg);
   width: 24px;
   height: 24px;
   margin: 17px;
@@ -577,10 +577,10 @@ html {
     background-color: #665F55;
   }
   .slider__arrow:hover .icon_arrow-next {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-right-light.svg);
+    background-image: url(../../coffee-house/images/arrows/arrow-right-light.svg);
   }
   .slider__arrow:hover .icon_arrow-prev {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/arrows/arrow-left-light.svg);
+    background-image: url(../../coffee-house/images/arrows/arrow-left-light.svg);
   }
 }
 .slider_arrow-prev {
@@ -748,13 +748,13 @@ footer {
 
 @font-face {
   font-family: Inter;
-  src: local("Inter Regular"), url(/andreevnna-JSFE2023Q4/coffee-house/fonts/Inter-Regular.ttf);
+  src: local("Inter Regular"), url(../../coffee-house/fonts/Inter-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Inter;
-  src: url(/andreevnna-JSFE2023Q4/coffee-house/fonts/Inter-SemiBold.ttf);
+  src: url(../../coffee-house/fonts/Inter-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
 }
@@ -825,10 +825,10 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   .button-mobile:hover .icon_google-play {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/google-light.svg);
+    background-image: url(../../coffee-house/images/icon/google-light.svg);
   }
   .button-mobile:hover .icon_apple {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/apple-light.svg);
+    background-image: url(../../coffee-house/images/icon/apple-light.svg);
   }
   .button-mobile:hover .text span {
     color: #E1D4C9;
@@ -842,13 +842,13 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   .button__social:hover .icon_facebook {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/facebook-light.svg);
+    background-image: url(../../coffee-house/images/icon/facebook-light.svg);
   }
   .button__social:hover .icon_twitter {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/twitter-light.svg);
+    background-image: url(../../coffee-house/images/icon/twitter-light.svg);
   }
   .button__social:hover .icon_instagram {
-    background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/icon/instagram-light.svg);
+    background-image: url(../../coffee-house/images/icon/instagram-light.svg);
   }
 }
 .button-tag {
@@ -948,7 +948,7 @@ footer {
 }
 
 .enjoy__background {
-  background-image: url(/andreevnna-JSFE2023Q4/coffee-house/images/img-hero.png);
+  background-image: url(../../coffee-house/images/img-hero.png);
   background-position: center;
   background-size: cover;
   padding: 100px;
