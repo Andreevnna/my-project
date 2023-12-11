@@ -1,24 +1,40 @@
-.enjoy__background {
-    background-image: url(../../coffee-house/images/img-hero.png);
-    background-position: center;
-    background-size: cover;
+.enjoy__video-background {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-height: 644px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @extend %border-radius;
-    padding: 100px;
-    background-repeat: no-repeat;
-    @include media-tablet {
-        padding: 100px 60px;
+    video {
+        width: 100%;
     }
     @include media-mobile {
-        padding: 60px 16px;
+        max-height: 552px;
+    }
+}
+@media (max-width: 1175px){
+    .enjoy__video-background {
+        video {
+            width: auto;
+        }
     }
 }
 .enjoy__content {
+    position: absolute;
+    top: 101px;
+    left: 100px;
     display: flex;
     flex-direction: column;
     max-width: 530px;
     color: $color-light;
     @include media-tablet {
-        // width: 100%;
+        left: 60px;
+    }
+    @include media-mobile {
+        top: 60px;
+        left: 16px;
     }
     a {
         color: $color-dark;
@@ -41,13 +57,13 @@
         }
     }
 }
-@media (min-width: 381px) and (max-width: 715px){
+@media (min-width: 380px) and (max-width: 715px){
     .enjoy__content {
+        max-width: 316px;
+        top: 60px;
+        left: 16px;
         h1 {
             font-size: 4.2rem;
         }
-    }
-    .enjoy__background { 
-        padding: 60px 30px;
     }
 }

@@ -3,11 +3,6 @@
     border: $border;
     padding: $padding;
     @extend %button;
-    // &:hover {
-    //     border: none;
-    //     background-color: $background;
-    //     @extend %transition;
-    // }
 }
 
 @mixin column($width: auto){

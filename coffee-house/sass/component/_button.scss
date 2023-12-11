@@ -1,6 +1,5 @@
 .button {
     @include button($padding: 0);
-    // background: $color-light
 }
 .button_colored {
     background-color: $color-light;
@@ -136,7 +135,9 @@
     height: 44px;
     border-radius: 100px;
     display: none;
+    cursor: pointer;
     &:after {
+        transition: all 0.4s ease-in-out;
         display: block;
         width: 16px;
         height: 1px;
@@ -151,6 +152,7 @@
     }
 }
 .button-menu-mobile__line {
+    transition: all 0.4s ease-in-out;
     display: block;
     width: 16px;
     height: 1px;
@@ -171,3 +173,11 @@
         display: block;
     }
 }
+@media (max-width: 768px) {
+    .button-menu-mobile.open :first-child {
+      transform: rotate(-45deg) translate(-3px, 3px);
+    }
+    .button-menu-mobile.open:after{
+      transform: rotate(45deg) translate(-2px, -2px);
+    }
+  }
