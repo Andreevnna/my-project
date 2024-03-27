@@ -336,16 +336,6 @@ html {
   border-radius: 40px;
 }
 
-.slider__control, .slider__controls:before, .slider__controls:after {
-  width: 40px;
-  height: 4px;
-  background-color: #403F3D;
-  display: inline-block;
-  content: "";
-  margin: 0px 4px;
-  border-radius: 100px;
-}
-
 .logo {
   background-image: url(../../coffee-house/images/logo.svg);
   width: 100px;
@@ -573,11 +563,27 @@ html {
 .slider__controls {
   margin: 25px 0;
 }
-.slider__controls:after {
-  opacity: 0.5;
-}
+
 .slider__control {
+  width: 40px;
+  height: 4px;
+  background-color: #C1B6AD;
   opacity: 0.5;
+  display: inline-block;
+  content: "";
+  margin: 0px 4px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.slider__progress {
+  border-radius: 100px;
+  height: 4px;
+  background-color: rgba(64, 63, 61, 0.8);
+  width: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .slider__arrow {
@@ -1510,4 +1516,9 @@ a {
   font-size: 1.6rem;
   line-height: 150%;
   text-decoration: none;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

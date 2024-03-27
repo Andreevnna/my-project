@@ -36,18 +36,27 @@
 }
 .slider__controls {
     margin: 25px 0;
-    &:after {
-        @extend %control-slider;
-        opacity: 0.5;
-    }
-    &:before {
-        @extend %control-slider;
-        
-    }
+
 }
 .slider__control {
-    @extend %control-slider;
+    width: 40px;
+    height: 4px;
+    background-color: $color-border-light;
     opacity: 0.5;
+    display: inline-block;
+    content: '';
+    margin: 0px 4px;
+    border-radius: 100px;
+    position: relative;
+}
+.slider__progress {
+    border-radius: 100px;
+    height: 4px;
+    background-color: $color-background-backdrop;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .slider__arrow {
     @include button($padding: 16px);
