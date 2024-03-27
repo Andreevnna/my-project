@@ -5,7 +5,15 @@
     display: flex;
     align-items: center;
     @include media-tablet {
-        display: none;
+        a {
+            font-size: 3.2rem;
+            font-weight: 600;
+            line-height: 125%;
+            .icon_menu {
+                width: 40px;
+                height: 40px;
+            }
+        }
     }
 }
 .menu-cheked {
@@ -15,8 +23,52 @@
     cursor: default;
     pointer-events: none;
 }
-.header__navigation {
+.header__menu-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $color-light;
     @include media-tablet {
-        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 0;
+        top: 100px;
+        height: 100vh;
+        transform: translateX(110%);
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+        z-index: 1;
+        padding: 60px 40px;
+        row-gap: 100px;
+    }
+}
+@media (max-width: 390px) {
+    .header__menu-wrapper {
+        padding: 60px 0px;
+    }
+}
+.header__menu {
+    display: flex;
+    column-gap: 24%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header__menu {
+        column-gap: 7%;
+    }
+}
+
+
+.open {
+    @include media-tablet {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        transform: translateX(0);
+        background-color: $color-light;
     }
 }

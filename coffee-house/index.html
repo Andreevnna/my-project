@@ -12,18 +12,27 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__padding">
-                <div class="layout-flex">
-                    <a href="index.html" class="logo"></a>
-                    <nav class="header__navigation">
-                        <ul class="navigation">
-                            <li><a href="#favorite">Favorite coffee</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#mobile">Mobile app</a></li>
-                            <li><a href="#contact">Contact us</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__menu">
-                        <a href="menu.html" class="menu"><span class="text">Menu</span><span class="icon icon_menu"></span></a>
+                <div class="header__menu">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo"></a>
+                    </div>
+                    <div class="header__menu-wrapper">
+                        <nav class="header__navigation">
+                            <ul class="navigation">
+                                <li><a href="#favorite">Favorite coffee</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#mobile">Mobile app</a></li>
+                                <li><a href="#contact">Contact us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__menu">
+                            <a href="menu.html" class="menu">
+                                <span class="text">Menu</span>
+                                <span class="icon">
+                                    <img class='icon_menu' src="images/icon/coffee-cup-big.svg" alt="">
+                                </span>
+                            </a>
+                        </div>
                     </div>
                     <div class="button-menu-mobile">
                         <span class="button-menu-mobile__line"></span>
@@ -34,12 +43,17 @@
     </header>
     <section class="enjoy">
         <div class="wrapper">
-            <div class="enjoy__background">
+            <div class="enjoy__video-background">
+                <video class="video" autoplay loop muted>
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
                 <div class="enjoy__content">
                     <h1><span class="accent font-italic">Enjoy</span> premium coffee at our charming cafe</h1>
                     <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
                     <div class="enjoy__button">
-                        <a class="button button_colored button-menu" href="menu.html"><span class="enjoy__button-text">Menu</span><span class="icon icon_menu"></span></a>
+                        <a class="button button_colored button-menu" href="menu.html"><span class="enjoy__button-text">Menu</span><span class="icon">
+                            <img class="icon_menu" src="images/icon/coffee-cup-big.svg" alt="">
+                        </span></a>
                     </div>
                 </div>
             </div>
@@ -49,26 +63,56 @@
         <div class="wrapper">
             <h2>Choose your <span class="accent font-italic">favorite</span> coffee</h2>
             <div class="slider">
-                <div class="slider__img">
-                    <img src="images/coffee-slider-1.png" alt="">
-                </div>
-                <div class="slider__text">
-                    <h3>S’mores Frappuccino</h3>
-                    <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                    <div class="slider__price">
-                        <h3>$5.50</h3>
+                <div class="slider__wrapper">
+                    <div class="slider__block">
+                        <img src="images/slider/coffee-slider-1.png" alt="">     
+                        <div class="slider__text">
+                            <h3>S’mores Frappuccino</h3>
+                            <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                            <div class="slider__price">
+                                <h3>$5.50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__block">
+                        <img src="images/slider/coffee-slider-2.png" alt="">
+                        <div class="slider__text">
+                            <h3>Caramel Macchiato</h3>
+                            <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                            <div class="slider__price">
+                                <h3>$5.00</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__block">
+                        <img src="images/slider/coffee-slider-3.png" alt="">
+                        <div class="slider__text">
+                            <h3>Ice coffee</h3>
+                            <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                            <div class="slider__price">
+                                <h3>$4.50</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="slider__controls">
-                    <span class="slider__control"></span>
+                    <span class="slider__control">
+                        <span class="slider__progress"></span>
+                    </span>
+                    <span class="slider__control">
+                        <span class="slider__progress"></span>
+                    </span>
+                    <span class="slider__control">
+                        <span class="slider__progress"></span>
+                    </span>
                 </div>
                 <div class="slider__arrows">
-                    <a href="" class="slider__arrow slider_arrow-prev">
+                    <button id="leftBtn" class="slider__arrow slider_arrow-prev prev">
                         <span class="icon icon__arrow icon_arrow-prev"></span>
-                    </a>
-                    <a href="" class="slider__arrow slider_arrow-next">
+                    </button>
+                    <button id="rightBtn" class="slider__arrow slider_arrow-next next">
                         <span class="icon icon__arrow icon_arrow-next"></span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -168,6 +212,6 @@
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>

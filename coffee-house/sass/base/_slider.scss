@@ -2,11 +2,13 @@
     position: relative;
     text-align: center;
 }
-.slider__img {
+.slider__block {
     padding-top: 40px;
     img {
+        padding-bottom: 8px;
         max-width: 480px;
         @include media-mobile {
+            padding-bottom: 8px;
             max-width: 348px;
         }
         @include media-tablet {
@@ -34,28 +36,39 @@
 }
 .slider__controls {
     margin: 25px 0;
-    &:after {
-        @extend %control-slider;
-        opacity: 0.5;
-    }
-    &:before {
-        @extend %control-slider;
-        
-    }
+
 }
 .slider__control {
-    @extend %control-slider;
+    width: 40px;
+    height: 4px;
+    background-color: $color-border-light;
     opacity: 0.5;
+    display: inline-block;
+    content: '';
+    margin: 0px 4px;
+    border-radius: 100px;
+    position: relative;
+}
+.slider__progress {
+    border-radius: 100px;
+    height: 4px;
+    background-color: $color-background-backdrop;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .slider__arrow {
     @include button($padding: 16px);
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 332px;
+    top: 330px;
+    background-color: transparent;
 }
 @media (hover:hover) {
     .slider__arrow {
+        cursor: pointer;
         &:hover {
             transition: all 0.5s ease-in-out;
             border: 1px solid $color-background-container;
@@ -70,13 +83,36 @@
     }
 }
 .slider_arrow-prev {
-    left: 0;
+    left: 4px;
+    @include media-tablet {
+        left: 0px;
+    }
 }
 .slider_arrow-next {
-    right: 0;
+    right: 4px;
+    @include media-tablet {
+        right: 0px;
+    }
 }
 .slider__arrows {
     @include media-mobile {
         display: none;
     }
+}
+
+.slider__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+.slider__block {
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    transition: all ease-in-out 0.4s;
 }
